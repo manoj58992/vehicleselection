@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class ProductSelection {
-	@RequestMapping(value = "product", method = RequestMethod.GET)
+	@RequestMapping(value = "selection", method = RequestMethod.GET)
 	public String displayproduct() {
 
-		System.out.println("Hi, select the vehicle model options");
+		System.out.println("Hi, select the options of the vehicle");
 
-		return "product";
+		return "selection";
 
 	}
 }
