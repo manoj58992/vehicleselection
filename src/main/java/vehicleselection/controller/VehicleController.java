@@ -20,7 +20,7 @@ public class VehicleController {
 
 		ModelAndView mv = new ModelAndView("vehicle");
 		mv.addObject("veh", v);
-		mv.addObject("username", " *Manoj*");
+		mv.addObject("username", " *Honda*");
 		return mv;
 	}
 
@@ -35,7 +35,6 @@ public class VehicleController {
 
 	@RequestMapping(value = "login-vehicle", method = RequestMethod.POST)
 	public ModelAndView saveVehicle(VehicleDto vehicle) {
-		System.out.println("i am receiving product from user");
 		System.out.println(vehicle.toString());
 
 		ModelAndView mv = new ModelAndView("vehicle");
